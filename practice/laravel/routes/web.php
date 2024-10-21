@@ -21,6 +21,8 @@ Route::get('/yuito', function(){
 
 
 Route::get('/yuito-data', [DataController::class, 'show'])->name('yuito-data');
+Route::get('/yuito-data2', [DataController::class, 'show2'])->name('yuito.form');
+Route::post('/yuito-form', [DataController::class, 'store'])->name('yuito.store');
 
 
 
