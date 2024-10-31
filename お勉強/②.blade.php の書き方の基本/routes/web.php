@@ -28,8 +28,8 @@ Route::get('/yuito', function(){
 Route::get('/yuito-data', [DataController::class, 'show']);
 
 
-// コントローラーの名前は、DataController,　メゾットの名前は'show'
-// このコントローラーに飛ばして、そのコントローラーの中の　show　っていうやつやってねってこと
+// コントローラーの名前は、DataController, メソットの名前は'show'
+// このコントローラーに飛ばして、そのコントローラーの中の show っていうやつやってねってこと
 // ここに真似して書いてみよう。コントローラーとメゾットは全く同じやつ使っていいよ
 
 
