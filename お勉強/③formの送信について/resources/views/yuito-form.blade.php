@@ -16,22 +16,23 @@
             <p class="mb-4">
                 Bladeでは、通常のHTMLと同じように`<form>`タグを使ってフォームを作成します。以下は基本的なフォームの例です。
             </p>
-            <pre class="bg-gray-100 p-4 rounded mb-6">
-                <code>
+            <div class="bg-gray-100 p-4 rounded mb-6">
+                <div>
                 {{-- フォームの基本例 --}}
                 <form action="{{ route('yuito.store') }}" method="POST">
-                    <!-- yuito.store　って名前のルートを使うよ -->
-                    @csrf {{-- CSRF保護のために必ず入れる --}}
+                    <!-- yuito.store って名前のルートを使うよ -->
+                    @csrf 
+                    {{-- CSRF保護のために必ず入れる --}}
                     <label for="name">アイテム名:</label>
                     <input type="text" id="name" name="name" class="border p-2 mb-4">
                     
                     <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">保存</button>
                 </form>
-                </code>
+                </div>
                 <!-- actionの中に、フォームが送信された時にどこにデータを送るか指定するよ -->
                 <!-- method="POST"でデータを安全に送信するよ -->
                 <!-- @csrfはLaravelのセキュリティ機能。必ずフォームの中に入れよう -->
-            </pre>
+            </div>
         </section>
 
         <section>
